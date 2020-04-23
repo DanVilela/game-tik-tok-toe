@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#home_page {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+}
+
+#home_page table {
+    width: 600px;
+}
+
+#home_page td {
+  
+}
+
+
+#game {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#game td {
+    border-bottom: solid 1px red;
+     border-right: solid 1px red;
+}
+
+.line {
+
+    display: inline-block;
+}
+
+
