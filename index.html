@@ -5,6 +5,7 @@
 
 		<title>TIC-TAC-TOE</title>
 		<script src="./js/jquery-3.5.0.min.js"></script>
+		<script src="./js/game.js"></script>
 	</head>
 
 	<body>
@@ -19,67 +20,79 @@
 						<td align="center">
 							<img src="img/player_1.png"/>
 							<br />
-							<input type="text" maxlength="10" placeholder="Nick Name Player One">
+							<input id="enter_player_1" type="text" maxlength="10" placeholder="Nick Name Player One">
 						</td>
 						<td align="center">
-							<img src="img/start.png"/>
+							<img id="btn_play_game" src="img/start.png"/>
 						</td>
 						<td align="center">
 							<img src="img/player_2.png"/>
 							<br />
-							<input type="text" maxlength="10" placeholder="Nick Name Player Two">
+							<input id="enter_player_2" type="text" maxlength="10" placeholder="Nick Name Player Two">
 						</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 
-		<div id="game" style="margin-top: 50px; text-align: center;">
+
+
+		<div id="game" style=" display:none; margin-top: 50px; text-align: center;">
 			<div style="display: inline-block;">
 				<img src="img/player_1.png"/>
-			</div>
+			<br />
+			<span id="name_player_1"></span>
+				</div>
+		
+
+
 			<div style="display: inline-block;">
 			<table border="0">
 				<tr>
 					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="a1" style="width: 100px; height: 100px;"></div>
 
 					</td>
 					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="a2" style="width: 100px; height: 100px;"></div>
 				</td>
 					<td style="border-bottom: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="a3" style="width: 100px; height: 100px;"></div>
 					</td>
 				</tr>
 				<tr>
 					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="b1" style="width: 100px; height: 100px;"></div>
 
 					</td>
 					<td style="border-bottom: solid 1px red; border-right: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="b2" style="width: 100px; height: 100px;"></div>
 				</td>
 					<td style="border-bottom: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="b3" style="width: 100px; height: 100px;"></div>
 					</td>
 				</tr>
 				<tr>
 					<td style="border-right: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="c1" style="width: 100px; height: 100px;"></div>
 
 					</td>
 					<td style="border-right: solid 1px red;">
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="c2" style="width: 100px; height: 100px;"></div>
 				</td>
 					<td>
-						<div style="width: 100px; height: 100px;"></div>
+						<div class="move" id="c3" style="width: 100px; height: 100px;"></div>
 					</td>
 				</tr>
 			</table>
 			</div>
+
+
+
 			<div style="display: inline-block;">
 				<img src="img/player_2.png"/>
+				<br />
+				<span id="name_player_2"></span>
 			</div>
 
 		</div>
