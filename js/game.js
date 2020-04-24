@@ -51,6 +51,7 @@ $(document).ready( function() {
     $('.move').click( function() {
 
         var id_clicked_space = this.id;
+        $('#' + id_clicked_space).off();
         move(id_clicked_space);
  
     });
@@ -136,12 +137,10 @@ $(document).ready( function() {
             var move_2 = $('#enter_player_2').val();
             alert(move_2 + 'is the winner');
             $('.move').off();
-
          }
 
      }
 
 
     
-   
 });
